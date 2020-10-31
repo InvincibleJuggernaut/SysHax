@@ -8,9 +8,7 @@
 <body>
     {% extends "template.html" %}
     {% block content %}
-    <h1 id="home_heading">VEHICLE FITNESS RESULTS</h1>
-
-    <h1 id="trending_heading">Trending right now !</h1>
+    <h1 id="home_heading">RESULTS</h1>
 
 
     <table class="trending_table">
@@ -21,18 +19,18 @@
         </tr>
         <tr>
             <td>1</td>
-            <td><a href={{ }}</a></td>
-            <td>{{ option1 }}</td>
+            <td>Vehicle Body</td>
+            <td>{{ final_report[0] }}</td>
         </tr>
         <tr>
             <td>2</td>
-            <td><a href={{  }}</a></td>
-            <td>{{ option2 }}</td>
+            <td>Windscreen</td>
+            <td>{{ final_report[1] }}</td>
         </tr>
         <tr>
             <td>3</td>
-            <td><a href={{ }}</a></td>
-            <td>{{ option3 }}</td>
+            <td>Mirrors</td>
+            <td>{{ final_report[2] }}</td>
         </tr>
     </table>
 

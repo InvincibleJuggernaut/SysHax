@@ -28,8 +28,13 @@ db=SQLAlchemy(app)
 login_manager=LoginManager()
 login_manager.init_app(app)
 
+global final_report
+final_report=[]
+
 location=get_location()
-result.append(location)
+final_report.append(location)
+
+
 
 class Officer(db.Model, UserMixin):
     __bind_key__='db'
@@ -174,8 +179,7 @@ def user():
 @app.route('/report')
 @login_required
 def report():
-    result=generate_result()
-    return render_template('report.html', result1=result[0], result2=result[1], result3=result[2])
+    return render_template('report.html')
 
 if __name__=="__main__":
     db.create_all()

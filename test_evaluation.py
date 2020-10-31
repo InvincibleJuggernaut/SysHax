@@ -3,8 +3,7 @@ from keras.preprocessing import image
 import numpy as np
 import cv2
 
-global result
-result=[]
+from main import *
 
 def predict_side_mirror(img_path):
     # Loading the model
@@ -25,9 +24,9 @@ def predict_side_mirror(img_path):
         result.append("damaged")
         return "damaged"
     else:
-        result.append("undamaged")
+        final_report.append("undamaged")
         return "undamaged"
-        result.append("undamaged")
+        final_report.append("undamaged")
     print(result)
 
 # def predict_headlights(image_path):
@@ -71,10 +70,10 @@ def predict_windscreen(img_path):
     pred = loaded_model.predict(img_tensor)
 
     if pred[0][0] > pred[0][1]:
-        result.append("damaged")
+        final_report.append("damaged")
         return "damaged"
     else:
-        result.append("undamaged")
+        final_report.append("undamaged")
         return "undamaged"
 
 
@@ -96,10 +95,10 @@ def predict_damage(img_path):
     pred = loaded_model.predict(img_tensor)
     print(pred)
     if pred[0][0] > pred[0][1]:
-        result.append("damaged")
+        final_report.append("damaged")
         return "damaged"
     else:
-        result.append("undamaged")
+        final_report.append("undamaged")
         return "undamaged"
 
 
