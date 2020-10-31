@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vehicle Fitness Testing</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/template.css') }}">
+  </head>
+  <body class="home_body">
+    {% extends "template.html" %}
+    {% block content %}
+    <p id="about_heading">{{ message }}</p>
+
+    <h1>{{ name }}</h1>
+    <br>
+    <h1>{{ email }}</h1>
+    <br>
+    <a href="signout">Logout</a>
+    {% endblock %}
+
+  </body>
+</html>

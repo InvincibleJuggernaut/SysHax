@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle Fitness Testing</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/template.css') }}">
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+    <h1 id="home_heading">VEHICLE FITNESS RESULTS</h1>
+    <p>{{ result1 }}</p>
+    <p>{{ result2 }}</p>
+    <p>{{ result3 }}</p>
+    {% endblock %}
+</body>
+</html>
