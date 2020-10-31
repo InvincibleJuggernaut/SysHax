@@ -22,7 +22,7 @@ def get_location():
     distance = R * c
 
     if(distance<0.5):
-        return "In Office premises"
+        return "Inside Office premises"
     else:
         return "Outside Office premises"
 

@@ -9,9 +9,33 @@
     {% extends "template.html" %}
     {% block content %}
     <h1 id="home_heading">VEHICLE FITNESS RESULTS</h1>
-    <p>{{ result1 }}</p>
-    <p>{{ result2 }}</p>
-    <p>{{ result3 }}</p>
+
+    <h1 id="trending_heading">Trending right now !</h1>
+
+
+    <table class="trending_table">
+        <tr>
+            <th>S.No</th>
+            <th>Assessment</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href={{ }}</a></td>
+            <td>{{ option1 }}</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href={{  }}</a></td>
+            <td>{{ option2 }}</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href={{ }}</a></td>
+            <td>{{ option3 }}</td>
+        </tr>
+    </table>
+
     {% endblock %}
 </body>
 </html>

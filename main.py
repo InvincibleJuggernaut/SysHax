@@ -7,9 +7,12 @@ import os
 
 from test_evaluation import *
 from compression import *
+from location import *
+from wipers import *
 
 UPLOAD_FOLDER='/home/devops/Development/Hackathons/Gov-TechThon/Uploads'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
+ALLOWED_VIDEO_EXTENSIONS={'mp4'}
 
 app=Flask(__name__)
 
@@ -24,6 +27,9 @@ db=SQLAlchemy(app)
 
 login_manager=LoginManager()
 login_manager.init_app(app)
+
+location=get_location()
+result.append(location)
 
 class Officer(db.Model, UserMixin):
     __bind_key__='db'
@@ -62,6 +68,9 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+def allowed_video(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_VIDEO_EXTENSIONS
 
 @app.route('/testing', methods=['GET', 'POST'])
 @login_required
@@ -77,6 +86,7 @@ def upload_file():
         if file.filename == '':
             return redirect(request.url)
         if file and allowed_file(file.filename):
+            #location=get_location()
             filename = secure_filename(file.filename)
             file_location =os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(file_location)
@@ -89,10 +99,26 @@ def upload_file():
             counter+=1
             message="Files uploaded successfully"
             return render_template('testing.html', message=message)
-    elif request.method=='GET':
+        elif file and allowed_video(file.filename):
+            filename = secure_filename(file.filename)
+            file_location = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            result = wiper(file_location)
+            file.save(file_location)
+    elif request.method =='GET':
         return render_template('testing.html')
     else:
         return render_template('result.html', message="Please sign-in")
+
+
+@app.route('/testing')
+def result_form():
+    try:
+        option1 = request.form.getlist('one')
+        option2 = request.form.getlist('two')
+        return render_template('report.html', option1=option1, option2=option2)
+    except:
+        return render_template('report.html')
+
 
 @app.route('/signup')
 def signup_load():

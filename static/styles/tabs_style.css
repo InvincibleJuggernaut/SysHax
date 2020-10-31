@@ -1,6 +1,6 @@
 body
 {
- background-color:#2E3B0B;
+ background-color:white;
  margin:0px auto;
  padding:0px;
  font-family:helvetica;
@@ -31,7 +31,7 @@ h1 p
 {
  display:inline;
  list-style-type:none;
- background-color:#688A08;
+ background-color:white;
  padding:10px;
  border-radius:5px 5px 0px 0px;
  color:#292A0A;
@@ -40,12 +40,12 @@ h1 p
 }
 #main_content li.notselected
 {
- background-color:#688A08;
+ background-color:white;;
  color:#292A0A;
 }
 #main_content li.selected
 {
- background-color:#D0F5A9;
+ background-color:white;;
  color:#292A0A;
 }
 #main_content .hidden_desc
@@ -55,7 +55,7 @@ h1 p
 }
 #main_content #page_content
 {
- background-color:#D0F5A9;
+ background-color:white;;
  padding:10px;
  margin-top:9px;
  border-radius:0px 5px 5px 5px;
