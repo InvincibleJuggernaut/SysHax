@@ -21,7 +21,7 @@ rate the test as pass / fail. For the tests where manual intervention is require
 
 <h2> Datasets</h2>
 
-<p>It was quite a challenging task to obtain a ready-made dataset for training the models. Other than the dataset for external body damage which can be viewed at <a href="https://github.com/neokt/car-damage-detective">here</a>, we had to resort to synthesizing our own dataset by scraping the web. All the datasets used for training the models can be found <a href="https://drive.google.com/drive/folders/1ttZocSV1DpBV7V5vMpp1ZrSl_BDASVYD?usp=sharing">here</a>.</p>
+<p>It was quite a challenging task to obtain a ready-made dataset for training the models. Other than the dataset for external body damage which can be viewed <a href="https://github.com/neokt/car-damage-detective">here</a>, we had to resort to synthesizing our own dataset by scraping the web. All the datasets used for training the models can be found <a href="https://drive.google.com/drive/folders/1ttZocSV1DpBV7V5vMpp1ZrSl_BDASVYD?usp=sharing">here</a>.</p>
 
 <h2> Pre-requisistes</h2>
 
