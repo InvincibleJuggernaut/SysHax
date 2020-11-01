@@ -21,12 +21,9 @@ def predict_side_mirror(img_path):
     img_tensor /= 255.
     pred = loaded_model.predict(img_tensor)
     if pred[0][0] > pred[0][1]:
-        result.append("damaged")
-        return "damaged"
+        return "Damaged"
     else:
-        final_report.append("undamaged")
-        return "undamaged"
-        final_report.append("undamaged")
+        return "Undamaged"
     print(result)
 
 # def predict_headlights(image_path):
@@ -70,11 +67,9 @@ def predict_windscreen(img_path):
     pred = loaded_model.predict(img_tensor)
 
     if pred[0][0] > pred[0][1]:
-        final_report.append("damaged")
-        return "damaged"
+        return "Damaged"
     else:
-        final_report.append("undamaged")
-        return "undamaged"
+        return "Undamaged"
 
 
 def predict_damage(img_path):
@@ -95,11 +90,9 @@ def predict_damage(img_path):
     pred = loaded_model.predict(img_tensor)
     print(pred)
     if pred[0][0] > pred[0][1]:
-        final_report.append("damaged")
-        return "damaged"
+        return "Damaged"
     else:
-        final_report.append("undamaged")
-        return "undamaged"
+        return "Undamaged"
 
 
 def generate_result():

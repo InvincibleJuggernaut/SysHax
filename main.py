@@ -29,10 +29,10 @@ login_manager=LoginManager()
 login_manager.init_app(app)
 
 global final_report
-final_report=[]
+final_report=[0]*10
 
 location=get_location()
-final_report.append(location)
+final_report[0]=location
 
 
 
@@ -97,10 +97,13 @@ def upload_file():
             file.save(file_location)
             if(counter==1):
                 result=predict_damage(file_location)
+                final_report[1]=result
             elif(counter==2):
                 result=predict_windscreen(file_location)
+                final_report[2]=result
             elif(counter==3):
                 result=predict_side_mirror(file_location)
+                final_report[3]=result
             counter+=1
             message="Files uploaded successfully"
             return render_template('testing.html', message=message)
@@ -120,6 +123,8 @@ def result_form():
     try:
         option1 = request.form.getlist('one')
         option2 = request.form.getlist('two')
+        final_report[4]=option1
+        final_report[5]=option2
         return render_template('report.html', option1=option1, option2=option2)
     except:
         return render_template('report.html')
@@ -179,7 +184,7 @@ def user():
 @app.route('/report')
 @login_required
 def report():
-    return render_template('report.html')
+    return render_template('report.html', final_report=final_report)
 
 if __name__=="__main__":
     db.create_all()

@@ -30,37 +30,7 @@
         <tr>
             <td>3</td>
             <td>Mirrors</td>
-            <td>{{ final_report[3] }}</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Conduction of test</td>
-            <td>{{ final_report[0] }}</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Brakes</td>
-            <td>Good condition</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Wheels</td>
-            <td>Average condition</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Seat-belts</td>
-            <td>Good condition<</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Tyre Pressure</td>
-            <td>Good condition</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>Engine Emissions</td>
-            <td>Average econdition</td>
+            <td>>{{ final_report[3] }}</td>
         </tr>
     </table>
 
