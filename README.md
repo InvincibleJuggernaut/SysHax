@@ -14,11 +14,13 @@ rate the test as pass / fail. For the tests where manual intervention is require
 <h2>Setup</h2>
 
 <p> Clone or download the repository in your preferred directory using:</p>
+
 ```
 git clone https://github.com/InvincibleJuggernaut/VelFitTest-6.git
 ```
 
 <p> To begin with the setup, first install all the dependencies using:</p>
+
 ```
 cd VelFitTest-6
 pip3 install -r requirements.txt
@@ -27,5 +29,6 @@ pip3 install -r requirements.txt
 <h2>Usage</h2>
 
 <p> The application can be run locally by using:</p>
+
 ```python3 main.py
 ```
