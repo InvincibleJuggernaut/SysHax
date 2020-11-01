@@ -184,6 +184,7 @@ def user():
 @app.route('/report')
 @login_required
 def report():
+    final_report[4]=wiper('out1.mp4')
     return render_template('report.html', final_report=final_report)
 
 if __name__=="__main__":
