@@ -7,6 +7,16 @@ ease this process for all.</p>
 <p>Therefore, fitness test procedure needs to be automated. The testing also needs to be done transparently. Wherever possible, the parameters are to be tested automatically (obtain the image / video for selected test, analyze and 
 rate the test as pass / fail. For the tests where manual intervention is required (checking the brakes, etc.), the authorized personnel will key-in the details (online). </p>
 
+<h2> Technology Stack</h2>
+<ul type="disc">
+  <li>sqlite3 in the back-end</li>
+  <li>Flask for the front-end</li>
+  <li>Keras modelling for the DL models</li>
+  <li>TensorFlow for ML models</li>
+  <li>OpenCV for real-time computer vision capabilities</li>
+  </ul>
+
+
 <h2> Pre-requisistes</h2>
 
 <p> All the dependencies can be found <a href="requirements.txt">here</a>.</p>
