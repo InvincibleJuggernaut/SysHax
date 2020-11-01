@@ -30,5 +30,6 @@ pip3 install -r requirements.txt
 
 <p> The application can be run locally by using:</p>
 
-```python3 main.py
+```
+python3 main.py
 ```
