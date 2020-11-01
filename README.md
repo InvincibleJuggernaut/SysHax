@@ -17,7 +17,7 @@ rate the test as pass / fail. For the tests where manual intervention is require
   </ul>
 
 <h2> Working</h2>
-
+<p> The application first initiates login for an RTO Officer. Then, they make proceed to test the vehicle for features like external damage, condition of wipers, condition of windshield. All these tasks are automated. Some evaluation need human interaction like evaluating engine, tyres, seatbelts etc. These can be keyed-in by the RTO officer and then they may proceed to generate the final report for the vehcile fitness certificate.</p>
 
 <h2> Datasets</h2>
 
