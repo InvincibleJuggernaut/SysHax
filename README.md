@@ -39,7 +39,7 @@ git clone https://github.com/InvincibleJuggernaut/VelFitTest-6.git
 
 ```
 cd VelFitTest-6
-pip3 install -r requirements.txt
+pip3 install -r dependencies.txt
 ```
 
 <h2>Usage</h2>
