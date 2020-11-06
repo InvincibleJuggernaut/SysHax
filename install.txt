@@ -1,4 +1,7 @@
-1) Once all the dependencies are installed, the apllication can be run using:
+1) Before running the program, download the ML models used which can be found at
+https://drive.google.com/drive/folders/1vcm7RF39QYNJhTOHQdpX2HIeoNE7j_Dp. Make sure to place them inside the Models directory.
+
+2) Once all the dependencies are installed, the apllication can be run using:
 
     python3 main.py
 
