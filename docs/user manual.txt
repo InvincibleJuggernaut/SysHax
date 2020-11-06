@@ -1,0 +1,18 @@
+1) Clone or download the repository in your preferred directory using:
+
+    git clone https://github.com/InvincibleJuggernaut/VelFitTest-6.git
+
+2) To begin with the setup, first install all the dependencies using:
+
+    cd VelFitTest-6
+    pip3 install -r dependencies.txt
+
+3)  The application can be run locally by using:
+
+    python3 main.py
+
+4) The application will be runnning live at http://127.0.0.1:5000/.
+
+5) Once you load that page, you may click on Login to Sign-in to the application. If you are running the program for the first time, you will need to proceed to sign-up page and create an account. You may login next and proceed to the Testing tab.
+
+6) Note that the Testing tab won't be available unless you are signed in.

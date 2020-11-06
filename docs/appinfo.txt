@@ -1,0 +1,61 @@
+-Uploads
+    -d.jpg
+    -c.jpg
+    -i.jpg
+-static
+    -styles
+        ->template.css
+        ->tabs_style.css
+-docs
+    -user manual.txt
+-Models
+    -Windscreen_Model.json
+    -Damage_Severity_Detection_Model.json
+    -Damage_or_Undamaged_Model.h5
+    -Windscreen_Model.h5
+    -Mirror_Model.json
+    -Damage_Severity_Detection_Model.h5
+    -Damage_or_Undamaged_Model.json
+    -Mirror_Model.h5
+-Testing
+    -l.jpg
+    -f.JPEG
+    -b.jpg
+    -d.jpg
+    -c.jpg
+    -a.jpg
+    -h.jpg
+    -i.jpg
+    -g.jpg
+    -k.jpg
+    -e.JPEG
+-templates
+    -signout.html
+    -report.html
+    -testing.html
+    -signup.html
+    -user.html
+    -signin.html
+    -template.html
+    -result.html
+    -home.html
+-Assets
+-face.py
+-test_evaluation.py
+-location.py
+-evaluation.py
+-dependencies.txt
+-compression.py
+-wipers.py
+-contact.txt
+-install.txt
+-lights.py
+-main.py
+
+
+
+
+
+
+
+
